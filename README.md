@@ -24,7 +24,7 @@ https://learnopengl.com/Model-Loading/Assimp, </br>
 어떤 면을 구성하는 정점이 p0, p1, p2 라면 각각의 법선 벡터를 n0, n1, n2라 할 때</br>
 모든 평면을 돌면서 정점 p0의 n0, p1의 n1, p2의 n2에 이웃평면의 노말벡터 N을 더한다</br>
 
-모든 평면 F에 대해</br>
+모든 평면 F에 대해</br></br>
     n0 = n0 + N</br>
     n1 = n1 + N</br>
     n2 = n2 + N</br>
@@ -40,7 +40,7 @@ OpenGL 2.0 Shader 언어로 구현되었다.</br>
 Gouraud Shading이 정점의 색상을 보간한 것이라면,</br>
 Phong Shading은 프래그먼트의 노말벡터를 보간하고 각 노말벡터에 대해 Phong Shading으로 계산한 것으로 보면 된다.</br>
 
-이떄 Phong Shading은 아래와 같이 계산된다.
+이떄 Phong Shading은 아래와 같이 계산된다.</br></br>
 Phong = ambient + Idiff * diffuse + (Ispec)^shininess * specular</br>
 
 ambient는 주변광</br>
