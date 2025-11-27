@@ -47,16 +47,16 @@ Phong = ambient + Idiff * diffuse + (Ispec)^shininess * specular</br>
 ambient는 주변광</br>
 
 Idiff은 난반사 광강도, 평면의 노말 벡터와 조명방향을 내적하여 계산된다.</br>
-diffuse는 난반사 계수(물체의 재질) * 광원의 색상 및 세기</br>
+diffuse는 난반사 계수(물체의 재질) * 광원의 색상 및 세기 (Component-wise Multiplication)</br>
 
 Isepc은 정반사 광강도, 조명 벡터와 시점벡터를 이등분하는 반벡터와 평면의 노말 벡터를 내적하여 결정된다.</br>
-specular는 정반사 계수(물체의 재질) * 광원의 색상 및 세기</br>
+specular는 정반사 계수(물체의 재질) * 광원의 색상 및 세기(Component-wise Multiplication)</br>
 
 반벡터란 조명벡터와 시점벡터를 이등분하는 벡터이다.</br>
 원래 Phong Shading에선 반사벡터 R과 시점 벡터 E와의 내적을 통해서 정반사 광강도를 계산하지만</br>
 Blinn 모델에선 반벡터라는 개념을 도입해 R과 E의 내적을 근사한다.</br>
 
-반벡터가 평면의 노말벡터가 완전히 일치하는 경우 시점벡터와 반사벡터가 완전히 일치하게 되므로</br>
+반벡터가 평면의 노말벡터와 완전히 일치하는 경우 시점벡터와 반사벡터가 완전히 일치하게 되므로</br>
 광강도는 최대가 된다. 이를 통해 광강도 계산을 더 간편히 근사할 수 있다.</br>
 
 ### 실행 결과
