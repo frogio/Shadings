@@ -34,7 +34,7 @@ https://learnopengl.com/Model-Loading/Assimp, </br>
 
 
 
-###Blinn-Phong Shading
+### Blinn-Phong Shading
 OpenGL 2.0 Shader 언어로 구현되었다.</br>
 
 Gouraud Shading이 정점의 색상을 보간한 것이라면,</br>
