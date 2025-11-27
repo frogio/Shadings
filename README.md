@@ -38,17 +38,18 @@ https://learnopengl.com/Model-Loading/Assimp, </br>
 OpenGL 2.0 Shader 언어로 구현되었다.</br>
 
 Gouraud Shading이 정점의 색상을 보간한 것이라면,</br>
-Phong Shading은 프래그먼트의 노말벡터를 보간하고 각 노말벡터에 대해 Phong Shading으로 계산한 것으로 보면 된다.</br>
+Phong Shading은 정점의 노말벡터를 보간하여 픽셀당 노말벡터를 계산한 뒤,</br>
+각 노말벡터에 대해 Phong Shading으로 계산하여 색상을 결정한 것으로 보면 된다.</br>
 
 이떄 Phong Shading은 아래와 같이 계산된다.</br></br>
 Phong = ambient + Idiff * diffuse + (Ispec)^shininess * specular</br>
 
 ambient는 주변광</br>
 
-Idiff은 난반사 광강도, 평면의 노말 벡터 N과 조명방향과 내적하여 계산된다.</br>
+Idiff은 난반사 광강도, 평면의 노말 벡터와 조명방향을 내적하여 계산된다.</br>
 diffuse는 난반사 계수(물체의 재질) * 광원의 색상 및 세기</br>
 
-Isepc은 정반사 광강도, 조명 벡터와 시점벡터를 이등분하는 반벡터와 평면의 노말 벡터 N 과 내적하여 결정된다.</br>
+Isepc은 정반사 광강도, 조명 벡터와 시점벡터를 이등분하는 반벡터와 평면의 노말 벡터를 내적하여 결정된다.</br>
 specular는 정반사 계수(물체의 재질) * 광원의 색상 및 세기</br>
 
 반벡터란 조명벡터와 시점벡터를 이등분하는 벡터이다.</br>
