@@ -1,0 +1,10 @@
+﻿  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I../include/GL /ZI /JMC /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Model.cpp
+  Model.cpp
+C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\GouraudShading\Model.cpp(64,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\GouraudShading\Model.cpp(73,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\GouraudShading\Model.cpp(77,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\GouraudShading\Model.cpp(91,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\GouraudShading\Model.cpp(98,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  GouraudShading.vcxproj -> C:\Users\User\Desktop\Computer Graphics\OpenGL 기초\GouraudShading\Debug\GouraudShading.exe
